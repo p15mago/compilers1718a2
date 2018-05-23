@@ -11,11 +11,7 @@ class MyParser: #klash me onoma MyParser
 
 	def create_scanner(self,fp):
 		letter=plex.Range('azAZ') #ena gramma
-		digit=plex.Range('09') #ena pshfio
-
-
-#		int_num = plex.Rep1(digit)
-		
+		digit=plex.Range('09') #ena pshfio		
 
 		telesths3=plex.Str('=')
 
@@ -53,7 +49,7 @@ class MyParser: #klash me onoma MyParser
 				
 	
 		
-	def match(self,token): #koitaei ean to token einai idio me auto pou exw krathsei sto buffer
+	def match(self,token): #koitaei ean to token einai idio me auto pou exw krathsei 
 		print("match")	
 		if self.la == token:
 			self.la,self.val=self.next_token()

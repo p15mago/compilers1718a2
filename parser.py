@@ -50,7 +50,7 @@ class MyParser: #klash me onoma MyParser
 	
 		
 	def match(self,token): #koitaei ean to token einai idio me auto pou exw krathsei 
-		print("match")	
+		#print("match")	
 		if self.la == token:
 			self.la,self.val=self.next_token()
 		else:
